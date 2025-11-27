@@ -24,7 +24,7 @@ with tab1:
         "Q3 2024": "$1.3M",
         "Q4 2024": "$1.6M"
     }
-    for quarter, revenue in sales_data.items():
+    for quarter, revenue in sales_data.items(): #if you wanna extract both, use .items
         st.write(f"{quarter}: {revenue}")
 with tab2:
     st.write("Content for Customer Insights")
@@ -34,7 +34,7 @@ with tab2:
         "Quick delivery and excellent support."
     ]
     for feedback in customer_feedback:
-        st.write(f"- {feedback}")
+        st.write(f"{feedback}") 
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
@@ -44,4 +44,8 @@ with tab3:
     }
     for trend, status in market_trends.items():
         st.write(f"{trend}: {status}")
+
+with st.expander("More Information"):
+    st.write("Additional details on data collection methods.")
+    st.write("Data was collected through surveys and sales reports.")
 
