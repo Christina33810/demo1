@@ -34,7 +34,7 @@ with tab2:
         "Quick delivery and excellent support."
     ]
     for feedback in customer_feedback:
-        st.write(f"{feedback}") 
+        st.write(f" [idx].{feedback}") 
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
